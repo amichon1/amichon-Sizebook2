@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp">
+<Button
+android:id="@+id/save"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_alignParentBottom="true"
+android:text="Save" />
+
+    <ScrollView
+    android:id="@+id/personFields"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp">
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/nameField"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:scrollbars="horizontal"
+            android:hint="Name (Required)" />
+
+        <EditText
+            android:id="@+id/dateField"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:hint="Date (yyy-mm-dd)"
+            android:scrollbars="horizontal" />
+
+        <EditText
+            android:id="@+id/neckField"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Neck (Inches)"
+            android:scrollbars="horizontal" />
+
+        <EditText
+            android:id="@+id/bustField"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Bust (Inches)"
+            android:scrollbars="horizontal" />
+
+        <EditText
+            android:id="@+id/chestField"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Chest (Inches)"
+            android:scrollbars="horizontal" />
+
+        <EditText
+            android:id="@+id/waistField"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Waist (Inches)"
+            android:scrollbars="horizontal" />
+
+        <EditText
+            android:id="@+id/hipField"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Hip (Inches)"
+            android:scrollbars="horizontal" />
+
+        <EditText
+            android:id="@+id/inseamField"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Inseam (Inches)"
+            android:scrollbars="horizontal" />
+
+        <EditText
+            android:id="@+id/commentField"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:scrollbars="horizontal"
+            android:hint="Comment" />
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
